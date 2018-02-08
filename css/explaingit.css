@@ -117,6 +117,7 @@ span.cmd {
 .remote-name-display {
   font-weight: bold;
   text-align: right;
+  display: none;
 }
 
 .control-box {
