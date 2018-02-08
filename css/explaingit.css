@@ -62,7 +62,6 @@ span.cmd {
   margin-left: 250px;
   display: block;
   overflow: auto;
-  border: 1px dotted #AAA;
 }
 
 .svg-container.remote-container {
@@ -85,7 +84,6 @@ span.cmd {
 
 #ExplainGitZen-Container .svg-container {
   display: inline-block;
-  border: 1px dotted #AAA;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -131,7 +129,6 @@ span.cmd {
   bottom: 0;
   width: 250px;
   vertical-align: bottom;
-  border: 1px dotted #AAA;
 }
 
 .control-box select {
