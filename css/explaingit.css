@@ -182,6 +182,10 @@ span.cmd {
   background: url(../images/prompt.gif) no-repeat left center black;
 }
 
+.scenario-chooser {
+  display: none;
+}
+
 .control-box .log .info, .control-box .log .error {
   font-size: 12px;
   padding: 5px;
