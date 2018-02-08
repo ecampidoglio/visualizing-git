@@ -59,7 +59,7 @@ span.cmd {
 }
 
 .svg-container {
-  margin-left: 250px;
+  margin-left: 400px;
   display: block;
   overflow: auto;
 }
@@ -88,7 +88,7 @@ span.cmd {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 250px;
+  left: 410px;
   margin-left: 0;
 }
 
@@ -127,7 +127,7 @@ span.cmd {
   position: absolute;
   top: 0px;
   bottom: 0;
-  width: 250px;
+  width: 399px;
   vertical-align: bottom;
 }
 
@@ -167,7 +167,7 @@ span.cmd {
 }
 
 .control-box .log .command-entry {
-  padding-left: 15px;
+  padding-left: 24px;
   color: #FFF;
   line-height: 14px;
   background: url(../images/prompt.gif) no-repeat left top black;
@@ -176,7 +176,7 @@ span.cmd {
 .control-box input[type="text"] {
   position: absolute;
   bottom: 0;
-  padding-left: 15px;
+  padding-left: 23px;
   color: #FFF;
   line-height: 14px;
   background: url(../images/prompt.gif) no-repeat left center black;
@@ -196,7 +196,7 @@ span.cmd {
 }
 
 .control-box input[type="text"] {
-  width: 235px;
+  width: 375px;
   border: none;
 }
 
