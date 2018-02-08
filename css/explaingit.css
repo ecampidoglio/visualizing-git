@@ -120,6 +120,10 @@ span.cmd {
   display: none;
 }
 
+.current-branch-display {
+  display: none;
+}
+
 .control-box {
   display: inline-block;
   position: absolute;
