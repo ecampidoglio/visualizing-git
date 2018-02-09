@@ -168,7 +168,7 @@ span.cmd {
   padding-left: 24px;
   margin: 10px 0;
   color: #FFF;
-  line-height: 14px;
+  line-height: 18px;
   background: url(../images/prompt.gif) no-repeat left top black;
 }
 
@@ -177,7 +177,7 @@ span.cmd {
   margin-top: 0;
   padding-left: 23px;
   color: #FFF;
-  line-height: 14px;
+  line-height: 28px;
   background: url(../images/prompt.gif) no-repeat left center black;
 }
 
