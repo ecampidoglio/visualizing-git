@@ -780,7 +780,7 @@ define(['d3'], function() {
       }, 14);
       this._renderText('message-label', function(d) {
         return d.message;
-      }, 24);
+      }, 28);
     },
 
     _renderText: function(className, getText, delta) {
