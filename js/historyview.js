@@ -776,7 +776,7 @@ define(['d3'], function() {
 
     _renderIdLabels: function() {
       this._renderText('id-label', function(d) {
-        return d.id + '..';
+        return d.id;
       }, 14);
       this._renderText('message-label', function(d) {
         return d.message;
