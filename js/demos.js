@@ -3,7 +3,7 @@ define([], function () {
   var free = {
     title: 'Free Explore',
     key: 'free',
-    message: 'Have fun!',
+    message: '',
     commitData: [
         {id: 'e137e9b', tags: ['master'], message: 'first commit'},
     ]
@@ -12,7 +12,7 @@ define([], function () {
   var freeWithRemote = {
     title: 'Free Explore with Remote',
     key: 'free-remote',
-    message: 'Have fun!',
+    message: '',
     commitData: [
         {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
     ],
