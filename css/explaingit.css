@@ -169,7 +169,7 @@ span.cmd {
   margin: 10px 0;
   color: #FFF;
   line-height: 18px;
-  background: url(../images/prompt.gif) no-repeat left top black;
+  background: url(../images/prompt.png) no-repeat left top;
 }
 
 .control-box input[type="text"] {
@@ -178,7 +178,7 @@ span.cmd {
   padding-left: 23px;
   color: #FFF;
   line-height: 28px;
-  background: url(../images/prompt.gif) no-repeat left center black;
+  background: url(../images/prompt.png) no-repeat left center rgba(0, 0, 0, 0.9);
   border-radius: 7px 7px 0 0;
 }
 
