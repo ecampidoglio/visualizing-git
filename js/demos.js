@@ -5,7 +5,7 @@ define([], function () {
     key: 'free',
     message: '',
     commitData: [
-        {id: 'e137e9b', tags: ['master'], message: 'first commit'},
+        {id: 'e137e9b', tags: ['master'], message: 'A'},
     ]
   }
 
@@ -14,10 +14,10 @@ define([], function () {
     key: 'free-remote',
     message: '',
     commitData: [
-        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'first commit'},
+        {id: 'e137e9b', tags: ['master', 'origin/master'], message: 'A'},
     ],
     originData: [
-        {id: 'e137e9b', tags: ['master'], message: 'first commit'}
+        {id: 'e137e9b', tags: ['master'], message: 'A'}
     ]
   }
 
@@ -30,7 +30,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
       },
       {
@@ -48,7 +48,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
       },
       {
@@ -78,7 +78,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
         "cx": 50,
         "cy": 330,
@@ -128,7 +128,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
         "cx": 50,
         "cy": 360,
@@ -183,7 +183,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
         "cx": 50,
         "cy": 330,
@@ -247,7 +247,7 @@ define([], function () {
       {
         "id": "e137e9b",
         "tags": [],
-        "message": "first commit",
+        "message": "A",
         "parent": "initial",
         "cx": 50,
         "cy": 318,
@@ -352,7 +352,7 @@ define([], function () {
     key: 'rebase',
     message: 'Try rebasing the `feature` branch',
     commitData: [
-        {id: 'e137e9b', tags: ['master'], message: 'first commit'}
+        {id: 'e137e9b', tags: ['master'], message: 'A'}
     ]
   }
 
