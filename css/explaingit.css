@@ -152,7 +152,7 @@ span.cmd {
   bottom: 20px;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #AAA;
+  border-radius: 0 0 7px 7px;
 }
 
 .control-box .log .reflog-entry, .control-box .log .log-entry {
@@ -179,6 +179,7 @@ span.cmd {
   color: #FFF;
   line-height: 28px;
   background: url(../images/prompt.gif) no-repeat left center black;
+  border-radius: 7px 7px 0 0;
 }
 
 .scenario-chooser {
