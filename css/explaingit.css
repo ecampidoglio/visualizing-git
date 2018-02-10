@@ -177,6 +177,7 @@ span.cmd {
   margin-top: 0;
   padding-left: 23px;
   color: #FFF;
+  outline: none;
   line-height: 28px;
   background: url(../images/prompt.png) no-repeat left center rgba(0, 0, 0, 0.9);
   border-radius: 7px 7px 0 0;
