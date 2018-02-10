@@ -20,7 +20,7 @@ function(_yargs, d3, demos) {
   function ControlBox(config) {
     this.historyView = config.historyView;
     this.originView = config.originView;
-    this.initialMessage = config.initialMessage || 'Enter git commands below.';
+    this.initialMessage = config.initialMessage;
     this._commandHistory = [];
     this._currentCommand = -1;
     this._tempCommand = '';
@@ -134,8 +134,7 @@ function(_yargs, d3, demos) {
 
       input = cBoxContainer.append('input')
         .attr('type', 'text')
-        .classed('input', true)
-        .attr('placeholder', 'enter git command');
+        .classed('input', true);
 
       log.on('click', function () {
         if (d3.event.target === log.node()) {
