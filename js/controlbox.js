@@ -219,24 +219,51 @@ function(_yargs, d3, demos) {
     },
 
     command: function(entry) {
-      if (entry.trim() === '') {
+      entry = entry.trim()
+      if (entry === '') {
         return;
       }
 
       document.getElementById('last-command').textContent = entry
 
-      if (entry.trim() === 'pres()') {
+      if (entry.trim() === 'help' || entry.trim() === 'help()') {
+        this.info('pres() = Turn on presenter mode')
+        this.info('undo = Undo the last git command')
+        this.info('redo = Redo the last undone git command')
+        this.info('mode = Change mode (`local` or `remote`)')
+        this.info('clear = Clear the history pane and reset the visualization')
+        this.info()
+        this.info('Available Git Commands:')
+        this.info('`git branch`')
+        this.info('`git checkout`')
+        this.info('`git cherry_pick`')
+        this.info('`git commit`')
+        this.info('`git fetch`')
+        this.info('`git log`')
+        this.info('`git merge`')
+        this.info('`git pull`')
+        this.info('`git push`')
+        this.info('`git rebase`')
+        this.info('`git reflog`')
+        this.info('`git reset`')
+        this.info('`git rev_parse`')
+        this.info('`git revert`')
+        this.info('`git tag`')
+        return
+      }
+
+      if (entry === 'pres()') {
         window.pres()
         return
       }
 
-      if (entry.trim().toLowerCase().indexOf('mode ') === 0) {
-        var mode = entry.trim().split(' ').pop().trim()
+      if (entry.toLowerCase().indexOf('mode ') === 0) {
+        var mode = entry.split(' ').pop()
         this.changeMode(mode)
         return
       }
 
-      if (entry.trim().toLowerCase() === 'undo') {
+      if (entry.toLowerCase() === 'undo') {
         var lastId = this.undoHistory.pointer - 1
         var lastState = this.undoHistory.stack[lastId]
         if (lastState) {
@@ -254,7 +281,7 @@ function(_yargs, d3, demos) {
         return
       }
 
-      if (entry.trim().toLowerCase() === 'redo') {
+      if (entry.toLowerCase() === 'redo') {
         var lastId = this.undoHistory.pointer + 1
         var lastState = this.undoHistory.stack[lastId]
         if (lastState) {
@@ -272,7 +299,7 @@ function(_yargs, d3, demos) {
         return
       }
 
-      if (entry.trim().toLowerCase() === 'clear') {
+      if (entry.toLowerCase() === 'clear') {
         window.resetVis()
         return
       }
@@ -736,8 +763,8 @@ function(_yargs, d3, demos) {
 
     push: function(args, opts, cmdStr) {
       var opt = yargs(cmdStr, {
-        alias: { force: ['f'] },
-        boolean: ['f']
+        alias: { force: ['f'], upstream: ['u'] },
+        boolean: ['f', 'u']
       })
 
       if (this.mode !== 'local') {
